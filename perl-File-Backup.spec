@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Backup
-Summary:	File-Backup perl module
-Summary(pl):	Modu³ perla File-Backup
+Summary:	File::Backup perl module
+Summary(pl):	Modu³ perla File::Backup
 Name:		perl-File-Backup
 Version:	0.02
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-Backup - For making rotating backups of directories.
+File::Backup - For making rotating backups of directories.
 
 %description -l pl
-File-Backup umo¿liwia rotacjê archiwów.
+File::Backup umo¿liwia rotacjê archiwów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
