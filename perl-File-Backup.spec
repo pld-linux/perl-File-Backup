@@ -4,12 +4,12 @@
 Summary:	File::Backup perl module
 Summary(pl):	Modu³ perla File::Backup
 Name:		perl-File-Backup
-Version:	0.03
+Version:	0.04
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e81bb184275406e8629b31bdefc4e5d8
+# Source0-md5:	819534e6681cac2dd7aa9dd6fbd384ca
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 BuildArch:	noarch
