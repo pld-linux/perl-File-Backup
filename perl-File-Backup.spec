@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	Backup
+%define		pdir	File
+%define		pnam	Backup
 Summary:	File::Backup - easy file backup & rotation automation
 Summary(pl):	File::Backup - ³atwa archiwizacja i rotacja plików
 Name:		perl-File-Backup
