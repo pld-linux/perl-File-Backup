@@ -3,7 +3,7 @@ Summary:	File-Backup perl module
 Summary(pl):	Modu³ perla File-Backup
 Name:		perl-File-Backup
 Version:	0.02
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
