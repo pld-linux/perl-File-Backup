@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Backup
@@ -13,6 +17,10 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	f53d6a22587abfde366ea84c141b716b
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
+%if %{with tests}
+BuildRequires:	perl-File-Which
+BuildRequires:	perl-LockFile-Simple
+%endif
 Requires:	gzip
 Requires:	tar
 BuildArch:	noarch
@@ -36,10 +44,13 @@ poprzez wywo³ania programów tar i gzip.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
