@@ -24,7 +24,7 @@ File::Backup umo¿liwia rotacjê archiwów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
