@@ -26,7 +26,7 @@ File::Backup umo¿liwia rotacjê archiwów.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
