@@ -1,25 +1,32 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Backup
-Summary:	File::Backup perl module
-Summary(pl):	Modu³ perla File::Backup
+Summary:	File::Backup - easy file backup & rotation automation
+Summary(pl):	File::Backup - ³atwa archiwizacja i rotacja plików
 Name:		perl-File-Backup
 Version:	0.07
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f53d6a22587abfde366ea84c141b716b
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
+Requires:	gzip
+Requires:	tar
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File::Backup - For making rotating backups of directories.
+The File::Backup legacy Perl module implements archival and
+compression (A.K.A "backup") and file rotation and is an
+implementation of "tar" and "gzip" calls.
 
 %description -l pl
-File::Backup umo¿liwia rotacjê archiwów.
+Modu³ Perla File::Backup stanowi implementacjê archiwizacji i
+kompresji ("backup") oraz rotacjê archiwów i jest zaimplementowany
+poprzez wywo³ania programów tar i gzip.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
