@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Backup
-%include	/usr/lib/rpm/macros.perl
 Summary:	File-Backup perl module
 Summary(pl):	Modu³ perla File-Backup
 Name:		perl-File-Backup
 Version:	0.02
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ File-Backup - For making rotating backups of directories.
 File-Backup umo¿liwia rotacjê archiwów.
 
 %prep
-%setup -q -n File-Backup-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
