@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	Backup
 Summary:	File::Backup - easy file backup & rotation automation
-Summary(pl):	File::Backup - ³atwa archiwizacja i rotacja plików
+Summary(pl.UTF-8):   File::Backup - Å‚atwa archiwizacja i rotacja plikÃ³w
 Name:		perl-File-Backup
 Version:	0.07
 Release:	1
@@ -31,10 +31,10 @@ The File::Backup legacy Perl module implements archival and
 compression (A.K.A "backup") and file rotation and is an
 implementation of "tar" and "gzip" calls.
 
-%description -l pl
-Modu³ Perla File::Backup stanowi implementacjê archiwizacji i
-kompresji ("backup") oraz rotacjê archiwów i jest zaimplementowany
-poprzez wywo³ania programów tar i gzip.
+%description -l pl.UTF-8
+ModuÅ‚ Perla File::Backup stanowi implementacjÄ™ archiwizacji i
+kompresji ("backup") oraz rotacjÄ™ archiwÃ³w i jest zaimplementowany
+poprzez wywoÅ‚ania programÃ³w tar i gzip.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
