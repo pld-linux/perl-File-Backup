@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	Backup
 Summary:	File::Backup - easy file backup & rotation automation
-Summary(pl.UTF-8):   File::Backup - łatwa archiwizacja i rotacja plików
+Summary(pl.UTF-8):	File::Backup - łatwa archiwizacja i rotacja plików
 Name:		perl-File-Backup
 Version:	0.07
 Release:	1
