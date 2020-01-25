@@ -4,7 +4,6 @@
 
 %define		pdir	File
 %define		pnam	Backup
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::Backup - easy file backup & rotation automation
 Summary(pl.UTF-8):	File::Backup - łatwa archiwizacja i rotacja plików
 Name:		perl-File-Backup
